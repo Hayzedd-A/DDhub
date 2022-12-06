@@ -1,0 +1,344 @@
+body {
+    margin: 0;
+    display: flex;
+    font-size: 12px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+}
+.menuIcon {
+    display: none;
+    width: 30px;
+}
+.menuIcon img {
+    width: 100%;
+}
+.mainContainer {
+    width: 100%;
+}
+.sideColour {
+    background-color: rgb(112, 84, 84);
+    width: 20px;
+}
+.homePage {
+    padding: 20px;
+    flex-grow: 1;
+}
+.topBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.topBar .logo {
+    font-weight: bolder;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+.topBar .logo span {
+    color: red;
+}
+.topBar .menuContainer {
+    flex-grow: 1;
+    transition: left .5s ease-in-out;
+}
+
+.menuContainer .closeIcon {
+    width: 35px;
+    display: none;
+    top: 5px;
+    left: 10px;
+    position: absolute;
+}
+.menuContainer .closeIcon img {
+    width: 100%;
+}
+.topBar li.homeSubMenu {
+    padding: 0;
+    width: 0;
+}
+.topBar ul {
+    display: flex;
+    background-color: rgb(112, 84, 84);
+    color: white;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    justify-content: space-around;
+}
+.topBar li:not(.homeSubMenu):hover {
+    background-color: rgb(125, 120, 120);
+}
+.topBar li {
+    padding: 10px;
+    width: 92%;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+}
+.topBar ul .tabList.active {
+    background-color: rgb(76, 66, 66);
+}
+
+section.topSection {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 20px;
+}
+.sideMenu {
+    position: absolute;
+    top: 65px;
+    left: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: smaller;
+}
+.sideMenu .heading h3 {
+    text-align: start;
+    transform: scaleY(1.5);
+    color: #e77e92;
+}
+.sideMenu .heading {
+    width: 100%;
+}
+.sideMenu .heading h3 {
+    text-align: center;
+    margin: 0;
+}
+.sideMenu hr {
+    background-color: gray;
+}
+.menuLists {
+    color: black;
+    width: 100%;
+    text-align: center;
+}
+.menuLists div.active {
+    background-color: #ffc0cba6;
+}
+.menuLists div {
+    padding: 10px;
+    border-radius: 5px;
+}
+.homePageContent {
+    flex-grow: 1;
+}
+.budgetForm>p span {
+    color: red;
+}
+.budgetForm p:first-child {
+    margin: 0;
+}
+.budgetForm p.sliderText {
+    margin: 0;
+    font-size: 6px;
+    margin-top: 5px;
+}
+.budgetForm input {
+    border: none;
+    border-bottom: 2px solid gray;
+    width: 40px;
+    font-weight: 700;
+    color: brown;
+}
+.budgetForm>span {
+    font-size: 2em;
+    margin: 5px;
+}
+.slider {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 30px 5px;
+}
+.slider hr {
+    position: absolute;
+    background: #d6bdbd;;
+    height: 3px;
+    border: none;
+    width: 100%;
+}.slider hr.ontop {
+    width: 17%;
+    background-color: black;
+}
+
+.sliderCircleContainer {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sliderCircle {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    border: 2px solid #d6bdbd;
+    background-color: #d6bdbd;
+}
+.sliderCircle.active {
+    width: 10px;
+    height: 10px;
+    background-color: white;
+}
+.budgetList {
+    display: grid;
+    grid-gap: 35px;
+}
+.budgetList h3, .budgetList div {
+    display: flex;
+    justify-content: space-between;
+}
+.budgetList img {
+    width: 10px;
+}
+.budgetList div>span:first-child {
+    width: 30px;
+}
+.budgetList div span:nth-child(2) {
+    flex-grow: 1;
+}
+.budgetListContainer div.totalContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: end;
+    margin-top: 30px
+}
+.budgetListContainer .totalContainer div:first-child {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.budgetListContainer .totalContainer span:first-child {
+    color: gray;
+}
+.budgetListContainer .totalContainer span:nth-of-type(2) {
+    font-size: 32px;
+    margin-left: 20px;;
+}
+.totalContainer .totalText {
+    font-size: 8px;
+}
+hr.sectionDivider {
+    width: 100%;
+    grid-column-start: 2;
+}
+section.bottomSection {
+    margin: 50px 0 30px 30px;
+    display: flex;
+    gap: 40px;
+}
+.contactUs {
+    display: grid;
+    gap: 10px;
+}
+.contactUs h3 {
+    margin: 0;
+}
+ul.contactUsList {
+    display: grid;
+    gap: 10px;
+    padding-left: 20px;
+}
+.contactImage img {
+    height: 200px;
+}
+form {
+    display: grid;
+    justify-items: center;
+}
+form fieldset {
+    border: none;
+}
+form fieldset input {
+    width: 100%;
+}
+form .submit>input{
+    border-radius: 5px;
+    border: none;
+    background: rgb(112, 84, 84);
+    padding: 5px 40px;
+    color: white;
+}
+form .checkbox>div {
+    width: 10px;
+    margin: 0;
+    height: 10px;
+    overflow: hidden;
+    border-radius: 50%;
+    position: relative;
+    font-size: 8px;
+    border: 1px solid black;
+}
+form .checkbox {
+    font-size: 8px;
+    display: flex;
+    align-items: center;
+    margin: 5px;
+}
+form .checkbox>div input {
+    top: -7px;
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    left: -8px;
+}
+@media only screen and (max-width: 600px) {
+    .topBar .menuContainer {
+        position: fixed;
+        left: -240px;
+        top: 0;
+        width: 250px;
+        height: 100vh;
+        z-index: 1;
+        background-color: rgb(112, 84, 84);
+    }
+    .topBar .menuContainer.active {
+        left: 0;
+    }
+    .topBar .icon {
+        cursor: pointer;
+    }
+    section.topSection {
+        grid-template-columns: 0px 1fr;
+        gap: 0px;
+    }
+    .topBar ul {
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+        height: 100%;
+        position: relative;
+        top: 40px;
+    }
+    .topBar li.homeSubMenu {
+        overflow: hidden;
+        position: relative;
+        top: 5px;
+        height: 0;
+        width: max-content;
+        transition: height 0.3s ease-in-out;
+    }
+    .topBar li.homeSubMenu.active {
+        height: 180px;
+    }
+    .sideMenu {
+        position: relative;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+        height: 160px;
+        transition: height 1s ease-in-out;
+    }
+    .menuContainer .closeIcon {
+        display: block;
+    }
+    .menuIcon {
+        display: block;
+    }
+    section.bottomSection {
+        flex-direction: column;
+    }
+}

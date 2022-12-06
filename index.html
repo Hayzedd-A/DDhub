@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>DDHub</title>
+</head>
+<body>
+    <div class="sideColour"></div>
+    <div class="mainContainer">
+        <div class="topBar">
+            <div class="menuIcon icon"><img src="menu_icon.png" alt="menu Icon"></div>
+            <div class="logo"><span>LO</span>GO</div>
+            <div class="menuContainer">
+                <div class="closeIcon icon"><img src="close_icon.png" alt=""></div>
+                <ul>
+                    <li class="tabList home">HOME</li>
+                    <li class="homeSubMenu">
+                        <div class="sideMenu">
+                            <div class="heading">
+                                <h3>Categories</h3><hr>
+                            </div>
+                            <div class="menuLists">
+                                <div class="menuList active">Web Development</div><hr>
+                                <div class="menuList">UI/UX Design</div><hr>
+                                <div class="menuList">Graphics Desing</div><hr>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="tabList aboutUs">ABOUT US</li>
+                    <li class="tabList products">PRODUCTS</li>
+                    <li class="active tabList pricing">PRICING</li>
+                    <li class="tabList contactUs">CONTACT US</li>
+                    <li class="tabList HireUs">HIRE US</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="homePage">
+            <section class="topSection">
+                <div class="sideMenuContainer"></div>
+                <div class="homePageContent">
+                    <div class="budgetForm">
+                        <p>What is your <span>Budget</span></p>
+                        <input type="text"> <span>-</span> <input type="text">
+                        <p class="sliderText">Move the slider to edit range or edit values directly</p>
+                        <img src="cross_pattern.png" alt="">
+                        <div class="slider">
+                            <hr class="behind">
+                            <hr class="ontop">
+                            <div class="sliderCircleContainer">
+                                <div class="sliderCircle active"></div>
+                                <div class="sliderCircle active"></div>
+                                <div class="sliderCircle"></div>
+                                <div class="sliderCircle"></div>
+                                <div class="sliderCircle"></div>
+                                <div class="sliderCircle"></div>
+                                <div class="sliderCircle"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="budgetListContainer">
+                        <div class="budgetList">
+                            <h3><span>What you'll get</span><span>Price</span></h3>
+                            <div><span><img src="mark_icon.png" alt=""></span><span>Lorem ipsum dolor sit amet consectetur.</span><span>$75</span></div>
+                            <div><span><img src="mark_icon.png" alt=""></span><span>Lorem ipsum dolor sit amet consectetur.</span><span>$26</span></div>
+                            <div><span><img src="mark_icon.png" alt=""></span><span>Lorem ipsum dolor sit amet consectetur.</span><span>$75</span></div>
+                            <div><span><img src="mark_icon.png" alt=""></span><span>Lorem ipsum dolor sit amet consectetur.</span><span>$75</span></div>
+                            <div><span><img src="mark_icon.png" alt=""></span><span>Lorem ipsum dolor sit amet consectetur.</span><span>$75</span></div>
+                            <div><span><img src="mark_icon.png" alt=""></span><span>Lorem ipsum dolor sit amet consectetur.</span><span>$75</span></div>
+                            <div><span><img src="mark_icon.png" alt=""></span><span>Lorem ipsum dolor sit amet consectetur.</span><span>$75</span></div>
+                        </div>
+                            <div class="totalContainer">
+                                <div class="total"><span>Total:</span><span>$400</span></div>
+                                <div class="totalText">Select or deselect optional item to adjust</div>
+                            </div>
+                    </div>
+                </div>
+                <hr class="sectionDivider">
+            </section>
+            <section class="bottomSection">
+                <div class="contactImage">
+                    <img src="help_img.png" alt="help image">
+                </div>
+                <div class="contactUs">
+                    <h3>Let Us Contact You</h3>
+                    <ul class="contactUsList">
+                        <li>Do you want to hire us?</li>
+                        <li>Do you want to negotiate?</li>
+                        <li>Do you want to make enquiries?</li>
+                        <li>Do you require a service that is not on the list?</li>
+                    </ul>
+                    <form action="">
+                        <fieldset>
+                            <label for="email">Enter your E-mail address</label>
+                            <input type="email" id="email">
+                        </fieldset>
+                        <div class="submit">
+                            <input type="submit" value="send">
+                            <div class="checkbox">
+                                <div>
+                                    <input type="checkbox">
+                                </div>
+                                <span>
+                                    Attach budget details
+                                </span>
+                            </div>
+                            
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="jQuery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
